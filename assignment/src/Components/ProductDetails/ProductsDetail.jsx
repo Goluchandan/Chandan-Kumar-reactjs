@@ -4,7 +4,7 @@ import { BsHeart, BsHeartFill } from "react-icons/bs";
 
 const getLocalStorageItems = () => {
   let favouriteItems = localStorage.getItem("favorite");
-  console.log(favouriteItems);
+  // console.log(favouriteItems);
 
   if (favouriteItems) {
     return JSON.parse(localStorage.getItem("favorite"));
@@ -36,7 +36,7 @@ const ProductsDetail = () => {
       });
   }, [id]);
 
-  console.log(data);
+  // console.log(data);
 
   const handlefavourite = () => {
     setFavourite(true);
@@ -47,7 +47,7 @@ const ProductsDetail = () => {
     localStorage.setItem("favorite", JSON.stringify(favouriteProduct));
   }, [favouriteProduct]);
 
-  console.log(favouriteProduct);
+  // console.log(favouriteProduct);
 
   return loading ? (
     <div className=" flex justify-center h-full item-center">

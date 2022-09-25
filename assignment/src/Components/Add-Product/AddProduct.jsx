@@ -61,15 +61,14 @@ const AddProduct = () => {
           onChange={(e) => setPrice(e.target.value)}
         />
         <br />
-
-        <input
-          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[100%] p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 font-semibold text-xl"
-          type="category"
-          placeholder="Enter the Category"
-          name="category"
-          value={category}
-          onChange={(e) => setCategory(e.target.value)}
-        />
+        <select className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[100%] p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 font-semibold text-xl"
+         onChange={(e) => setCategory(e.target.value)} >
+          <option value="Electronics">Electronics</option>
+          <option value="Clothing">Clothing</option>
+          <option value="Accessories">Accessories</option>
+          <option value="Furniture">Furniture</option>
+          <option value="Hobby">Hobby</option>
+        </select>
         <br />
 
         <input

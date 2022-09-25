@@ -33,11 +33,11 @@ const Home = () => {
   },[])
 
   const handleClick = (id) => {
-    console.log(id)
+    // console.log(id)
     navigate(`/ProductsDetail/${id}`)
   }
 
-  console.log(category , result)
+  // console.log(category , result)
 
   return loading ? (
   <div className=" flex justify-center h-full item-center">

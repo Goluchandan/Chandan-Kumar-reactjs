@@ -6,7 +6,7 @@ const Favorites = () => {
   
   const StorageItems = () => {
       let listItems = localStorage.getItem("favorite");
-      console.log(listItems)
+      // console.log(listItems)
    
       if(listItems){
          return JSON.parse(localStorage.getItem("favorite"))
